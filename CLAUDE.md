@@ -105,9 +105,13 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
     Prata-Fallback + Avenir/Raleway), fünf Signatur-Elemente (Foto-Fade,
     Linien+Schrift im Bild, Foto-Trenner, Reveal-Scroll-Effekt, Weißraum)
     und konkrete Wix-Editor-Anweisungen.
+  - `design/material.md` — Bestand des Google-Drive-Ordners „Seja Website"
+    (Fotos/Logos/Portraits; Snapshot 2026-06-12, Upload läuft noch).
+    Drive-Sync per `gdown --folder <Freigabe-Link>`.
   - **Offen**: Name/Dateien/Lizenz der Brand-Display-Serif; Einsatz des
-    Script-Fonts klären; Bildmaterial kommt via Google Drive → danach
-    Kuratierung (Hero, Foto-Trenner, Reportage, Svenja-Portrait).
+    Script-Fonts klären; Logo-Subline klären („Fotografie" vs. „Media &
+    Fotografie"); ist `Fotos/` Svenjas Website-Auswahl?; Reportage-Material
+    abwarten → dann Kuratierung (Hero, Foto-Trenner, Reportage-Strecke).
 
 ## Repo
 
