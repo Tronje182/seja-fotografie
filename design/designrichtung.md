@@ -206,6 +206,11 @@ schon so benennen, dass die EN-Spiegelung leichtfällt.
 6. **Testimonials**: helles Greige `#E9E2DD` als Hintergrund, 2–3 Zitate
    als Slider (kursive Serif, Name in Dusty-Rose-Versalien). Inhaltlich:
    wie sich die Zusammenarbeit angefühlt hat, nicht „schöne Bilder".
+   **Launch-Hinweis**: Es gibt noch keine Testimonials (Svenja sammelt
+   sie nach und nach). Die Sektion im Wix-Editor trotzdem bauen und bis
+   dahin **ausblenden** (Element → „Ausblenden" bzw. Sektion auf
+   unsichtbar) — so kann Svenja sie später nur mit Texten füllen und
+   einblenden, ohne Layoutarbeit. Die Seite launcht ohne diese Sektion.
 7. **Q&A kompakt**: 4–6 wichtigste Fragen als Accordion, Link „Alle Fragen"
    (vollständige FAQ auf der Kontakt- oder Hochzeiten-Seite).
 8. **Get in touch**: Headline („Erzählt mir von eurem Tag" o. ä.) +
@@ -246,16 +251,32 @@ keine harten S/W-Kontraste, keine grellen Farben, keine unruhigen
 Animationen, keine Instagram-Wand, keine überladene Startseite, keine
 generischen Hochzeitsfloskeln.
 
-## Nächste Schritte
+## Launch-Plan (Ziel: möglichst bald live)
 
-1. ~~Brandkit abgleichen~~ → erledigt (diese v2). **Offen daraus**:
-   Name/Dateien/Lizenz der Display-Serif erfragen; Logo-Dateien (SVG/PNG
-   mit Transparenz) in den Media-Manager-Ordner „My Logos" legen;
-   Script-Font-Einsatz mit Svenja klären.
-2. Neues Bildmaterial aus dem Google Drive sichten; Kuratierung:
-   Hero-Kandidaten, Foto-Trenner (Querformat, ruhig), Reportage-Strecke,
-   Svenja-Portrait für die dunkle About-Sektion.
-3. Im Wix-Editor: globale Farben + Text-Themes anlegen (einmalig), dann
-   Homepage-Sektionen in obiger Reihenfolge bauen.
-4. Texte: Claims/Hero/About aus dem Briefing als Basis, von Svenja
-   gegenlesen lassen.
+Visueller Referenz-Entwurf: `design/entwurf-homepage-v1.jpg`
+(generiert mit `design/entwurf-homepage-v1.py`).
+
+**Launch-blockierend (MVP):**
+
+1. Wix-Editor einmalig einrichten: globale Farben (Palette v2) +
+   Text-Themes (Prata-Fallback + Avenir/Raleway).
+2. Homepage-Sektionen bauen (Reihenfolge wie oben; Testimonials-Sektion
+   mitbauen, aber ausgeblendet lassen).
+3. Unterseiten: Hochzeiten, Portraits & Paare, Portfolio (mit
+   Klick-Reportage, sobald Material da), Über Svenja, Kontakt.
+4. Texte einsetzen (Briefing-Bausteine), von Svenja gegenlesen lassen.
+5. Anfrage-Formular anlegen + Testversand prüfen.
+6. Impressum + Datenschutz (DSGVO, Cookie-Banner-Einstellungen prüfen).
+7. SEO-Basics: Seitentitel, Meta Descriptions, Alt-Texte der Bilder.
+8. Mobile-Durchgang aller Seiten im Wix-Editor.
+9. Veröffentlichen (zunächst unter wixsite.com-URL; Domain später).
+
+**Nicht launch-blockierend (nachrüsten):**
+
+- Testimonials (Svenja sammelt noch) → Sektion einblenden, sobald 2–3
+  Zitate da sind.
+- Adore-Webfont (Lizenzfrage) → bis dahin Prata.
+- Englische Version (Wix Multilingual).
+- Eigene Domain + Weiterleitung von seja-fotografie-coaching.de.
+- Regionale SEO-Landingpages.
+- Reportage erweitern/zweite Reportage.

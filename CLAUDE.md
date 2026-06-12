@@ -112,14 +112,20 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
     (nicht „Media & Fotografie", nicht „& Coaching"). Brand-Fonts:
     Headings = „Adore" (Elvina Studio), Akzent-Script = „The
     Impressionist" Regular (PeachCreme).
+  - `design/entwurf-homepage-v1.jpg` — visueller Homepage-Entwurf
+    (generiert via `design/entwurf-homepage-v1.py`; echte Fotos, Palette
+    v2, Prata/Raleway, beide Logo-Varianten).
+  - **Launch-Ziel: möglichst bald** (Hagen, 2026-06-12). MVP-Checkliste
+    in `design/designrichtung.md` → „Launch-Plan". Testimonials gibt es
+    noch nicht → Sektion bauen, aber bis dahin ausblenden.
   - **Offen**: Webfont-Lizenz + Dateien für „Adore" beschaffen —
     **bis dahin ist Prata als Heading-Font gesetzt (Entscheidung Hagen
     2026-06-12)**; Script-Einsatz nur als Signatur empfohlen; weiße
-    „SEJA Fotografie"-Logovariante fehlt weiterhin (das seasalt-PNG ist
-    per Pixel-Check schwarz, nur 500×500 — höher aufgelöste/weiße
-    Version bzw. Vektor anfragen); ist `Fotos/` Svenjas Website-Auswahl?;
+    „SEJA Fotografie"-Logovariante: aus dem schwarzen seasalt-PNG
+    generiert (an Hagen geliefert), Vektor/höhere Auflösung wäre
+    langfristig besser; ist `Fotos/` Svenjas Website-Auswahl?;
     Reportage-Material abwarten → dann Kuratierung (Hero, Foto-Trenner,
-    Reportage-Strecke).
+    Reportage-Strecke); Testimonials nachreichen (Svenja).
 
 ## Repo
 
