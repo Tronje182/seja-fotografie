@@ -52,10 +52,13 @@ Seja Website/
 - Brand Style Guide nennt im Footer „Seja Fotografie **& Coaching**".
 - **Geklärt (2026-06-12, Hagen): „SEJA Fotografie" ist die richtige
   Subline für die Website.** → Web-Logo ist
-  `seasalt (Instagram Story) (Logo).png`; davon wird noch eine weiße
-  Variante für dunkle Flächen/Bilder gebraucht (bei der Designerin
-  anfragen oder aus Vektor ableiten). Die „Media & Fotografie"-PNGs
-  nicht verwenden.
+  `seasalt (Instagram Story) (Logo).png`. **Achtung**: Die Datei ist
+  per Pixel-Check **schwarz** auf Transparenz (500×500px) — Hagen hielt
+  sie für die weiße Variante, vermutlich Drive-Vorschau-Täuschung.
+  Eine **weiße** „SEJA Fotografie"-Variante fehlt also weiterhin (für
+  dunkle Flächen/Bilder); außerdem ist 500×500 für große Einsätze knapp —
+  höher aufgelöste Version oder Vektor wäre gut. Die
+  „Media & Fotografie"-PNGs nicht verwenden.
 - **Offen**: Vektor-Dateien (SVG/EPS) und das Hände-Motiv als separate
   Datei beschaffen — PNGs reichen für Web, aber Vektor wäre sauberer
   (Favicon, Skalierung).

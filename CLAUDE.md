@@ -112,11 +112,14 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
     (nicht „Media & Fotografie", nicht „& Coaching"). Brand-Fonts:
     Headings = „Adore" (Elvina Studio), Akzent-Script = „The
     Impressionist" Regular (PeachCreme).
-  - **Offen**: Webfont-Lizenz + Dateien für „Adore" beschaffen (bis dahin
-    Prata als Wix-Fallback); Script-Einsatz nur als Signatur empfohlen;
-    weiße „SEJA Fotografie"-Logovariante beschaffen;
-    ist `Fotos/` Svenjas Website-Auswahl?; Reportage-Material
-    abwarten → dann Kuratierung (Hero, Foto-Trenner, Reportage-Strecke).
+  - **Offen**: Webfont-Lizenz + Dateien für „Adore" beschaffen —
+    **bis dahin ist Prata als Heading-Font gesetzt (Entscheidung Hagen
+    2026-06-12)**; Script-Einsatz nur als Signatur empfohlen; weiße
+    „SEJA Fotografie"-Logovariante fehlt weiterhin (das seasalt-PNG ist
+    per Pixel-Check schwarz, nur 500×500 — höher aufgelöste/weiße
+    Version bzw. Vektor anfragen); ist `Fotos/` Svenjas Website-Auswahl?;
+    Reportage-Material abwarten → dann Kuratierung (Hero, Foto-Trenner,
+    Reportage-Strecke).
 
 ## Repo
 
