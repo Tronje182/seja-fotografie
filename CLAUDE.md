@@ -72,16 +72,26 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
 - **Locale**: Deutsch (DE), Währung EUR, Zeitzone Europe/Berlin.
 - **Veröffentlichung**: Die Site ist noch **nicht publiziert**
   (Live-URL liefert 404).
-- **Media Manager**: 68 Dateien, alle Bilder:
-  - Ordner „Portfolio" (`0b5aa1743f074373a6d6149ea8627975`): 54 große
-    Original-JPGs (`DSC_*.jpg`, je ca. 5–15 MB) — das eigentliche Portfolio.
-  - Zweiter Ordner „Portfolio" (`3646b983ca694351a7f32bb72bfcb0cb`): 6 kleine
-    JPGs mit UUID-Namen (~0,2–0,3 MB), vermutlich Testbilder/Duplikat-Ordner.
-  - Ordner „My Logos": leer.
-  - Root: Logo-PNGs, 3 KI-generierte Bilder, 1 großes JPG, 3 kleine UUID-JPGs.
+- **Media Manager** (umstrukturiert per API am 2026-06-12, von Hagen
+  autorisiert; insgesamt 87 Dateien):
+  - **„Website-Auswahl"** (`646c857b60e2401c94dd098ad1db6f1c`): die 18
+    kuratierten Website-Fotos (15 aus „Portfolio" verschoben + 3 neue aus
+    dem Drive hochgeladen: DSC_8041/8183/8266).
+  - **„Website-Portraits Svenja"** (`4f0bc67cbd764d748b8708bebb2ba2f2`):
+    14 Studio-Portraits (7 Motive in Farbe + S/W) aus dem Drive.
+  - **„My Logos"**: `SEJA-Fotografie-Logo-schwarz.png` (Original seasalt)
+    + `SEJA-Fotografie-Logo-weiss.png` (generierte weiße Variante).
+  - „Portfolio" (`0b5aa1743f074373a6d6149ea8627975`): 39 verbleibende
+    Original-JPGs (nicht kuratiert).
+  - Zweiter Ordner „Portfolio" (`3646b983ca694351a7f32bb72bfcb0cb`):
+    6 kleine UUID-JPGs (vermutlich Test) — unangetastet.
+  - Root: 8 Dateien (Logo-PNGs alt, KI-Bilder, Test-JPGs) — unangetastet.
+  - API-Hinweise: Upload via `POST /site-media/v1/files/generate-upload-url`
+    → `PUT uploadUrl?filename=…`; Verschieben via
+    `PATCH /site-media/v1/files/{fileId}` mit `{"parentFolderId": …}`;
+    `files/search` akzeptiert `paging.limit` max. 100.
   - Hinweis fürs Design: Die Portfolio-JPGs sind unkomprimierte Originale;
-    für die Live-Site übernimmt Wix die Auslieferungs-Optimierung, aber die
-    Bildauswahl/Kuratierung steht noch aus.
+    für die Live-Site übernimmt Wix die Auslieferungs-Optimierung.
   - **Herkunft der Portfolio-Bilder**: bestätigt von Svenja (geklärt
     2026-06-12). EXIF: Nikon D750, einheitlich mit Adobe Lightroom (Mac)
     bearbeitet. Die EXIF-Aufnahmedaten (2014) sind eine falsch gestellte
