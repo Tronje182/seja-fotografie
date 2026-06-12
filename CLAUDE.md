@@ -51,10 +51,10 @@ curl -s -X POST -H "Authorization: $WIX_API_KEY" -H "wix-site-id: $SITE" \
 curl -s -H "Authorization: $WIX_API_KEY" -H "wix-site-id: $SITE" \
   "https://www.wixapis.com/members/v1/members?paging.limit=1"
 
-# CMS / Wix Data — derzeit NICHT nutzbar:
-# GET /wix-data/v2/collections → 403, POST /wix-data/v2/collections/query → 404.
-# Vermutlich ist auf der Site kein CMS eingerichtet und/oder die
-# Wix-Data-Permission fehlt dem Key noch.
+# CMS / Wix Data — Berechtigung vorhanden, aber Site-seitig nicht aktiv:
+# GET /wix-data/v2/collections → 400 „WDE0110: Wix Code not enabled".
+# D. h. auf der Site ist kein CMS/Wix Code aktiviert. Falls Collections
+# gewünscht: im Wix-Editor das CMS hinzufügen (bzw. Dev-Modus aktivieren).
 ```
 
 Interpretation der Statuscodes: ungültiger Key → 401; gültiger Key ohne
@@ -83,8 +83,10 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
     für die Live-Site übernimmt Wix die Auslieferungs-Optimierung, aber die
     Bildauswahl/Kuratierung steht noch aus.
 - **Members**: 1 Mitglied (sdobbelstein = Svenja/Owner, angelegt 2026-05-14).
-- **CMS**: keine Collections lesbar (siehe oben) — wahrscheinlich noch kein
-  CMS eingerichtet.
+- **CMS**: nicht eingerichtet — Wix Data meldet `WDE0110: Wix Code not
+  enabled`. Der API-Key hat inzwischen alle vergebbaren Berechtigungen
+  (Stand 2026-06-12, vom Owner bestätigt); das CMS müsste bei Bedarf im
+  Wix-Editor aktiviert werden.
 - **Design-Arbeit**: noch keine Inspirationsseiten analysiert, noch keine
   Designrichtung festgelegt.
 
