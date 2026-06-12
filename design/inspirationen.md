@@ -55,6 +55,11 @@ nicht als Technik).
    selbst gliedert die Seite.
 3. **Foto-in-Hintergrund-Übergang** (Abschnitt „Elopements"): Bild läuft
    weich in die Hintergrundfarbe der Seite aus statt hart zu enden.
+3b. **Content scrollt über das Hintergrundbild** (Nachtrag Svenja,
+   2026-06-12): Das Hero-Bild bleibt beim Scrollen stehen, die folgende
+   Sektion (inkl. der hineinragenden Galerie-Kacheln) schiebt sich
+   darüber — Fixed-Background-/Reveal-Effekt, in Wix als Scroll-Effekt
+   „Reveal"/„Parallax" verfügbar.
 4. Erzählstruktur: abwechselnd Text-Sektion → Bildstreifen → Text-Sektion;
    Headlines stellen Nutzen/Gefühl in den Vordergrund („A Wedding Day That
    Breathes", „Presence Over Performance" — passt inhaltlich exakt zu

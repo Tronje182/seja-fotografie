@@ -55,9 +55,9 @@ Im Wix-Editor einmalig unter **Site-Design → Text-Themes** hinterlegen
 (H1–H6 + Absatz), damit alle Seiten konsistent bleiben und Svenja später
 nur Inhalte tauscht.
 
-## Die vier Signatur-Elemente
+## Die fünf Signatur-Elemente
 
-Diese vier Muster machen den Look aus — alles andere bleibt weg:
+Diese fünf Muster machen den Look aus — alles andere bleibt weg:
 
 ### 1. Foto-Fade in den Hintergrund (Svenjas „love it")
 
@@ -91,11 +91,36 @@ dem Footer), sonst verliert der Effekt seine Wirkung.
 
 Zwischen Inhaltssektionen volle Bildstreifen (Full-Bleed-Strips,
 Desktop-Höhe ~60–75vh) ohne Text oder höchstens mit einer Zeile.
-Querformat-Bilder mit ruhiger Komposition wählen. Optional dezenter
-Parallax-Effekt (Wix-Strip-Einstellung „Scroll-Effekt: Parallax") —
-maximal eine Effektart pro Seite, keine Animations-Spielereien.
+Querformat-Bilder mit ruhiger Komposition wählen.
 
-### 4. Weißraum als Standard
+### 4. Content scrollt über das Bild (Parallax/Reveal)
+
+Der Scroll-Effekt von The Light Seeker, den Svenja mag: Das Hintergrundbild
+steht (fast) still, während der nachfolgende Content darüberschiebt — das
+Bild wirkt wie eine Bühne hinter der Seite.
+
+Umsetzung im Wix-Editor (Strip-Hintergrund):
+
+1. Strip auswählen → **Hintergrund ändern → Einstellungen → Scroll-Effekte**.
+2. **„Reveal" (Aufdecken)**: Bild bleibt komplett fixiert, die nächste
+   Sektion schiebt sich darüber — das ist der Light-Seeker-Effekt und die
+   erste Wahl für Hero und Foto-Trenner.
+3. Alternativ **„Parallax"**: Bild scrollt langsamer mit — etwas mehr
+   Bewegung, ebenfalls ruhig. Pro Seite für **eine** der beiden Varianten
+   entscheiden, nicht mischen.
+
+Regeln: Effekt nur auf Full-Bleed-Bildstrips (Hero + Foto-Trenner), nie auf
+Text-Sektionen. Kombiniert sich gut mit dem Foto-Fade (Verlauf an der
+Unterkante des fixierten Bilds). In der Mobilansicht prüfen: Wix deaktiviert
+Scroll-Effekte mobil teils automatisch — das ist okay, mobil zählt das
+stehende Bild.
+
+Verwandtes Light-Seeker-Detail (optional, sparsam): Die Galerie-Kacheln,
+die unten in den Hero hineinragen — in Wix baubar, indem die Galerie über
+die Sektionsgrenze gezogen wird (Element überlappt zwei Strips). Nur an
+einer Stelle einsetzen, sonst wird es unruhig.
+
+### 5. Weißraum als Standard
 
 - Sektionen großzügig polstern (Desktop ≥ 100px oben/unten).
 - Pro Sektion: 1 Eyebrow, 1 Headline, max. 1 kurzer Absatz, max. 1 CTA.
@@ -119,9 +144,11 @@ schon so benennen, dass die EN-Spiegelung leichtfällt.
 
 ## Homepage — Sektionsplan
 
-1. **Hero**: Full-Bleed-Foto, Claim als Serif-Headline („Nicht nur wie es
-   aussah. Sondern wie es sich angefühlt hat."), Eyebrow „Hochzeitsfotografie ·
-   Deutschland & Niederlande", feine Linie, unten **Foto-Fade** in Off-White.
+1. **Hero**: Full-Bleed-Foto mit Scroll-Effekt **„Reveal"** (Content schiebt
+   beim Scrollen über das stehende Bild), Claim als Serif-Headline („Nicht
+   nur wie es aussah. Sondern wie es sich angefühlt hat."), Eyebrow
+   „Hochzeitsfotografie · Deutschland & Niederlande", feine Linie, unten
+   **Foto-Fade** in Off-White.
 2. **Intro/Haltung**: 2–3 Sätze Positionierung (aus dem Briefing), Link
    „Über Svenja".
 3. **Foto-Trenner** (Full-Bleed).
