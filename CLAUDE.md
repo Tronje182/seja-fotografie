@@ -82,12 +82,10 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
   - Hinweis fürs Design: Die Portfolio-JPGs sind unkomprimierte Originale;
     für die Live-Site übernimmt Wix die Auslieferungs-Optimierung, aber die
     Bildauswahl/Kuratierung steht noch aus.
-  - **Herkunft der Portfolio-Bilder ungeklärt**: Laut Owner sind die Bilder
-    nicht von Svenja (Vermutung: Wix-Platzhalter). EXIF-Prüfung spricht aber
-    gegen Stock-Material: alle Stichproben stammen von derselben Nikon D750
-    (Seriennummer 6002137), einheitlich mit Adobe Lightroom 8.2 (Mac)
-    bearbeitet — also das echte Portfolio EINES Fotografen. Klärung mit
-    Svenja steht aus; bis dahin keine Bilder löschen.
+  - **Herkunft der Portfolio-Bilder**: bestätigt von Svenja (geklärt
+    2026-06-12). EXIF: Nikon D750, einheitlich mit Adobe Lightroom (Mac)
+    bearbeitet. Die EXIF-Aufnahmedaten (2014) sind eine falsch gestellte
+    Kamera-Uhr.
 - **Members**: 1 Mitglied (sdobbelstein = Svenja/Owner, angelegt 2026-05-14).
 - **CMS**: nicht eingerichtet — Wix Data meldet `WDE0110: Wix Code not
   enabled`. Der API-Key hat inzwischen alle vergebbaren Berechtigungen
