@@ -98,12 +98,16 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
   - `design/inspirationen.md` — Analyse der Referenzen
     thelightseeker.photography (WordPress/Divi) und amourfotografie.com
     (selbst eine Wix-Site!) inkl. Svenjas Notizen.
-  - `design/designrichtung.md` — Designrichtung v1 „Quiet Editorial":
-    Palette, Typografie (Cormorant Garamond + Avenir/Raleway), die vier
-    Signatur-Elemente (Foto-Fade, Linien+Schrift im Bild, Foto-Trenner,
-    Weißraum) und konkrete Wix-Editor-Anweisungen.
-  - **Offen**: Svenjas Brandkit (Logo/Typografie) und weiteres Bildmaterial
-    via Google Drive kommen noch → Palette/Fonts danach finalisieren.
+  - `design/designrichtung.md` — Designrichtung v2 „Quiet Editorial",
+    abgeglichen mit Svenjas Brandkit (SEJA-Wortmarke, Hände-Motiv,
+    Palette Rostrot/Greige/Dusty Rose auf hellem Grund, dunkle
+    About-Kontrast-Sektion): Farbpalette, Typografie (Brand-Serif bzw.
+    Prata-Fallback + Avenir/Raleway), fünf Signatur-Elemente (Foto-Fade,
+    Linien+Schrift im Bild, Foto-Trenner, Reveal-Scroll-Effekt, Weißraum)
+    und konkrete Wix-Editor-Anweisungen.
+  - **Offen**: Name/Dateien/Lizenz der Brand-Display-Serif; Einsatz des
+    Script-Fonts klären; Bildmaterial kommt via Google Drive → danach
+    Kuratierung (Hero, Foto-Trenner, Reportage, Svenja-Portrait).
 
 ## Repo
 
