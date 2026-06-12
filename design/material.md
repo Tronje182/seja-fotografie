@@ -50,9 +50,12 @@ Seja Website/
 - `seasalt (Instagram Story) (Logo).png`: „SEJA **Fotografie**" — schwarz,
   große Version, Script-Subline
 - Brand Style Guide nennt im Footer „Seja Fotografie **& Coaching**".
-- **Offene Frage an Svenja**: Welche Subline gilt für die Website —
-  „Fotografie", „Media & Fotografie" oder ohne Subline? (Briefing sagt:
-  Marke = „Seja Fotografie".)
+- **Geklärt (2026-06-12, Hagen): „SEJA Fotografie" ist die richtige
+  Subline für die Website.** → Web-Logo ist
+  `seasalt (Instagram Story) (Logo).png`; davon wird noch eine weiße
+  Variante für dunkle Flächen/Bilder gebraucht (bei der Designerin
+  anfragen oder aus Vektor ableiten). Die „Media & Fotografie"-PNGs
+  nicht verwenden.
 - **Offen**: Vektor-Dateien (SVG/EPS) und das Hände-Motiv als separate
   Datei beschaffen — PNGs reichen für Web, aber Vektor wäre sauberer
   (Favicon, Skalierung).

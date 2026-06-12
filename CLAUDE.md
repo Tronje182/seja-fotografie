@@ -108,9 +108,11 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
   - `design/material.md` — Bestand des Google-Drive-Ordners „Seja Website"
     (Fotos/Logos/Portraits; Snapshot 2026-06-12, Upload läuft noch).
     Drive-Sync per `gdown --folder <Freigabe-Link>`.
+  - **Geklärt**: Logo-Subline für die Website ist „SEJA Fotografie"
+    (nicht „Media & Fotografie", nicht „& Coaching").
   - **Offen**: Name/Dateien/Lizenz der Brand-Display-Serif; Einsatz des
-    Script-Fonts klären; Logo-Subline klären („Fotografie" vs. „Media &
-    Fotografie"); ist `Fotos/` Svenjas Website-Auswahl?; Reportage-Material
+    Script-Fonts klären; weiße „SEJA Fotografie"-Logovariante beschaffen;
+    ist `Fotos/` Svenjas Website-Auswahl?; Reportage-Material
     abwarten → dann Kuratierung (Hero, Foto-Trenner, Reportage-Strecke).
 
 ## Repo
