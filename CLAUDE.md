@@ -91,8 +91,19 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
   enabled`. Der API-Key hat inzwischen alle vergebbaren Berechtigungen
   (Stand 2026-06-12, vom Owner bestätigt); das CMS müsste bei Bedarf im
   Wix-Editor aktiviert werden.
-- **Design-Arbeit**: noch keine Inspirationsseiten analysiert, noch keine
-  Designrichtung festgelegt.
+- **Design-Arbeit** (Stand 2026-06-12): Briefing und Inspirationen liegen vor
+  und sind analysiert:
+  - `briefing/onboarding-briefing.md` — strategisches Onboarding-Briefing
+    (Positionierung, Zielgruppe, Seitenstruktur, Tonalität, SEO, No-Gos).
+  - `design/inspirationen.md` — Analyse der Referenzen
+    thelightseeker.photography (WordPress/Divi) und amourfotografie.com
+    (selbst eine Wix-Site!) inkl. Svenjas Notizen.
+  - `design/designrichtung.md` — Designrichtung v1 „Quiet Editorial":
+    Palette, Typografie (Cormorant Garamond + Avenir/Raleway), die vier
+    Signatur-Elemente (Foto-Fade, Linien+Schrift im Bild, Foto-Trenner,
+    Weißraum) und konkrete Wix-Editor-Anweisungen.
+  - **Offen**: Svenjas Brandkit (Logo/Typografie) und weiteres Bildmaterial
+    via Google Drive kommen noch → Palette/Fonts danach finalisieren.
 
 ## Repo
 
