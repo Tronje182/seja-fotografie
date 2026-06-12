@@ -109,9 +109,12 @@ Live-Sitemap geht erst nach Veröffentlichung der Site.
     (Fotos/Logos/Portraits; Snapshot 2026-06-12, Upload läuft noch).
     Drive-Sync per `gdown --folder <Freigabe-Link>`.
   - **Geklärt**: Logo-Subline für die Website ist „SEJA Fotografie"
-    (nicht „Media & Fotografie", nicht „& Coaching").
-  - **Offen**: Name/Dateien/Lizenz der Brand-Display-Serif; Einsatz des
-    Script-Fonts klären; weiße „SEJA Fotografie"-Logovariante beschaffen;
+    (nicht „Media & Fotografie", nicht „& Coaching"). Brand-Fonts:
+    Headings = „Adore" (Elvina Studio), Akzent-Script = „The
+    Impressionist" Regular (PeachCreme).
+  - **Offen**: Webfont-Lizenz + Dateien für „Adore" beschaffen (bis dahin
+    Prata als Wix-Fallback); Script-Einsatz nur als Signatur empfohlen;
+    weiße „SEJA Fotografie"-Logovariante beschaffen;
     ist `Fotos/` Svenjas Website-Auswahl?; Reportage-Material
     abwarten → dann Kuratierung (Hero, Foto-Trenner, Reportage-Strecke).
 

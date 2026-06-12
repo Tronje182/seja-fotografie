@@ -58,22 +58,38 @@ Regeln:
 
 ## Typografie (Brandkit-Abgleich)
 
-1. **Erste Wahl — Brand-Font einsetzen**: Wix erlaubt das Hochladen
-   eigener Fonts (Site-Design → Text → Schriften hochladen, TTF/OTF/WOFF).
-   Dafür brauchen wir von Svenja/der Designerin den **Namen + die Dateien
-   + Webfont-Lizenz** der Display-Serif aus dem Brandkit. → offene Frage.
-2. **Fallback (Wix-nativ), bis der Brand-Font da ist**: **Prata** (hohe
-   Strichstärken-Kontraste, dem Brand-Font am nächsten) oder **Cormorant
-   Garamond** (weicher, weniger fashion). Empfehlung: Prata für H1/H2,
-   damit es zur Logo-Anmutung passt.
+Brand-Fonts (von Hagen benannt, 2026-06-12):
+
+- **Headings: „Adore"** — moderne Display-Serif von Elvina Studio
+  (Vertrieb u. a. MyFonts, Creative Market, Etsy). Das ist die Schrift
+  der SEJA-Wortmarke/Brandkit-Headings.
+- **Akzent: „The Impressionist" Regular** — Script von PeachCreme
+  (Creative Market u. a.), die Handschrift der Logo-Subline
+  („Fotografie") und des „Akzent"-Beispiels im Brandkit.
+
+Einsatzplan:
+
+1. **Adore für H1/H2 per Font-Upload**: Wix erlaubt eigene Fonts
+   (Site-Design → Text → Schriften hochladen, TTF/OTF/WOFF).
+   **Lizenz-Check nötig**: Eine Desktop-Lizenz (Etsy/Creative Market)
+   deckt i. d. R. nur Grafiken ab; für die Einbettung als Webfont auf der
+   Website braucht es eine Web-/Webfont-Lizenz (bei MyFonts explizit
+   erhältlich). Klären, welche Lizenz Svenja/die Designerin besitzt,
+   und die Font-Dateien beschaffen.
+2. **Fallback (Wix-nativ), bis Adore lizenziert/hochgeladen ist**:
+   **Prata** für H1/H2 (hoher Strichkontrast, der Adore-Anmutung am
+   nächsten); Alternative Cormorant Garamond (weicher).
 3. **Fließtext**: leichte Sans — Avenir Light oder Raleway (Wix-nativ),
-   16–18px, Zeilenhöhe 1.6–1.8, max. ~650px Zeilenbreite.
+   16–18px, Zeilenhöhe 1.6–1.8, max. ~650px Zeilenbreite. (Brandkit
+   definiert keinen Fließtext-Font; Adore ist reine Display-Schrift und
+   für Mengentext ungeeignet.)
 4. **Eyebrow-Labels**: Sans in Versalien, 13–14px, Laufweite +0.15em,
    Farbe Dusty Rose `#A38177`.
-5. **Script „Akzent"**: Konflikt mit Briefing-No-Go „zu verspielte
+5. **The Impressionist**: Konflikt mit Briefing-No-Go „zu verspielte
    Schriften". Empfehlung: höchstens als einzelnes handschriftliches Wort
-   an 1–2 Stellen (z. B. Signatur „Svenja" unter dem About-Text), nie für
-   Headlines oder Navigation. Mit Svenja klären.
+   an 1–2 Stellen (z. B. Signatur „Svenja" unter dem About-Text) — und
+   da er im Logo-PNG ohnehin enthalten ist, ist die Markenpräsenz schon
+   gesichert. Kein Upload nötig, falls wir ihn nur im Logo nutzen.
 
 Im Wix-Editor einmalig unter **Site-Design → Text-Themes** hinterlegen
 (H1–H6 + Absatz), damit alle Seiten konsistent bleiben und Svenja später
