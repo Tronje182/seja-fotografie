@@ -18,6 +18,7 @@ für Claude-Sessions (Konzepte, Analysen, API-Skripte, Projektstand).
 ## Wix-API-Konventionen
 
 - **Site-ID**: `1f8308b9-7e8c-471f-ac37-488ac3ca2fa9`
+- **Site-URL** (noch unveröffentlicht): https://sdobbelstein.wixsite.com/seja-fotografie
 - **API-Key**: liegt in der Umgebungsvariable `WIX_API_KEY`
   (Account-API-Key; **Wert niemals ausgeben oder loggen**).
 - **Basis-URL**: `https://www.wixapis.com`
@@ -29,49 +30,118 @@ für Claude-Sessions (Konzepte, Analysen, API-Skripte, Projektstand).
 - Grundsatz: erst lesen und berichten; nichts an der Site verändern, solange
   Svenja/der Owner es nicht ausdrücklich anweist.
 
-### Bewährte Lese-Probes (Onboarding-Check)
+### Bewährte Lese-Endpunkte
 
 ```bash
-# Site Properties (kanonischer Berechtigungs-Check)
+SITE="1f8308b9-7e8c-471f-ac37-488ac3ca2fa9"
+
+# Site Properties (kanonischer Berechtigungs-Check) — funktioniert
 curl -s -H "Authorization: $WIX_API_KEY" -H "wix-site-id: $SITE" \
   https://www.wixapis.com/site-properties/v4/properties
 
-# CMS-Collections
-curl -s -H "Authorization: $WIX_API_KEY" -H "wix-site-id: $SITE" \
-  https://www.wixapis.com/wix-data/v2/collections
-
-# Media Manager
+# Media Manager: Dateien + Ordner — funktioniert
+curl -s -X POST -H "Authorization: $WIX_API_KEY" -H "wix-site-id: $SITE" \
+  -H "Content-Type: application/json" -d '{"paging":{"limit":100}}' \
+  https://www.wixapis.com/site-media/v1/files/search
 curl -s -X POST -H "Authorization: $WIX_API_KEY" -H "wix-site-id: $SITE" \
   -H "Content-Type: application/json" -d '{}' \
-  https://www.wixapis.com/site-media/v1/files/search
+  https://www.wixapis.com/site-media/v1/folders/search
 
-# Members
+# Members — funktioniert
 curl -s -H "Authorization: $WIX_API_KEY" -H "wix-site-id: $SITE" \
   "https://www.wixapis.com/members/v1/members?paging.limit=1"
+
+# CMS / Wix Data — Berechtigung vorhanden, aber Site-seitig nicht aktiv:
+# GET /wix-data/v2/collections → 400 „WDE0110: Wix Code not enabled".
+# D. h. auf der Site ist kein CMS/Wix Code aktiviert. Falls Collections
+# gewünscht: im Wix-Editor das CMS hinzufügen (bzw. Dev-Modus aktivieren).
 ```
 
-Interpretation: ungültiger Key → 401; gültiger Key ohne Berechtigung → 403
-(site-properties nennt dabei die fehlende Permission, z. B.
-`site-settings.view`); HTML-Fehlerseiten von Wix sind ebenfalls 403/404.
+Interpretation der Statuscodes: ungültiger Key → 401; gültiger Key ohne
+Berechtigung → 403 (site-properties nennt dabei die fehlende Permission,
+z. B. `site-settings.view`); falsche Pfade und Wix-HTML-Fehlerseiten → 404.
 
-## Aktueller Stand (2026-06-12)
+**Keine Seitenstruktur-API gefunden**: Für klassische Wix-Editor-Sites gibt es
+keinen REST-Endpunkt für die Seitenliste (diverse Kandidaten → 404). Die
+Live-Sitemap geht erst nach Veröffentlichung der Site.
 
-- Netzwerk und Authentifizierung funktionieren: ungültiger Key → 401, unser
-  Key → 403 mit benanntem Berechtigungsfehler.
-- **Der Key hat weiterhin KEINE Berechtigungen auf der Site.** Alle
-  Lese-Probes (site-properties, wix-data/collections, members,
-  site-media/files) liefern 403; site-properties meldet explizit
-  `Unauthorized to perform site-settings.view`.
-- Nächster Schritt (Owner): unter https://manage.wix.com/account/api-keys dem
-  Key Berechtigungen geben — mindestens Site Properties lesen, CMS/Wix Data,
-  Media Manager; optional Members und SEO.
-- Sobald Berechtigungen da sind: Onboarding-Check wiederholen, dann
-  Bestandsaufnahme der Site (Seitenstruktur, CMS-Collections,
-  Media-Bestand) erstellen.
-- Design-Arbeit: noch keine Inspirationsseiten analysiert, noch keine
-  Designrichtung festgelegt.
+## Bestandsaufnahme der Site (Stand 2026-06-12)
+
+- **Name/Branding**: „Seja Fotografie", Claim/Beschreibung „Ewige Erinnerungen
+  in jedem Bild". Kategorie: photography / Hochzeitsfotografiestudio.
+- **Locale**: Deutsch (DE), Währung EUR, Zeitzone Europe/Berlin.
+- **Veröffentlichung**: Die Site ist noch **nicht publiziert**
+  (Live-URL liefert 404).
+- **Media Manager** (umstrukturiert per API am 2026-06-12, von Hagen
+  autorisiert; insgesamt 87 Dateien):
+  - **„Website-Auswahl"** (`646c857b60e2401c94dd098ad1db6f1c`): die 18
+    kuratierten Website-Fotos (15 aus „Portfolio" verschoben + 3 neue aus
+    dem Drive hochgeladen: DSC_8041/8183/8266).
+  - **„Website-Portraits Svenja"** (`4f0bc67cbd764d748b8708bebb2ba2f2`):
+    14 Studio-Portraits (7 Motive in Farbe + S/W) aus dem Drive.
+  - **„My Logos"**: `SEJA-Fotografie-Logo-schwarz.png` (Original seasalt)
+    + `SEJA-Fotografie-Logo-weiss.png` (generierte weiße Variante).
+  - „Portfolio" (`0b5aa1743f074373a6d6149ea8627975`): 39 verbleibende
+    Original-JPGs (nicht kuratiert).
+  - Zweiter Ordner „Portfolio" (`3646b983ca694351a7f32bb72bfcb0cb`):
+    6 kleine UUID-JPGs (vermutlich Test) — unangetastet.
+  - Root: 8 Dateien (Logo-PNGs alt, KI-Bilder, Test-JPGs) — unangetastet.
+  - API-Hinweise: Upload via `POST /site-media/v1/files/generate-upload-url`
+    → `PUT uploadUrl?filename=…`; Verschieben via
+    `PATCH /site-media/v1/files/{fileId}` mit `{"parentFolderId": …}`;
+    `files/search` akzeptiert `paging.limit` max. 100.
+  - Hinweis fürs Design: Die Portfolio-JPGs sind unkomprimierte Originale;
+    für die Live-Site übernimmt Wix die Auslieferungs-Optimierung.
+  - **Herkunft der Portfolio-Bilder**: bestätigt von Svenja (geklärt
+    2026-06-12). EXIF: Nikon D750, einheitlich mit Adobe Lightroom (Mac)
+    bearbeitet. Die EXIF-Aufnahmedaten (2014) sind eine falsch gestellte
+    Kamera-Uhr.
+- **Members**: 1 Mitglied (sdobbelstein = Svenja/Owner, angelegt 2026-05-14).
+- **CMS**: nicht eingerichtet — Wix Data meldet `WDE0110: Wix Code not
+  enabled`. Der API-Key hat inzwischen alle vergebbaren Berechtigungen
+  (Stand 2026-06-12, vom Owner bestätigt); das CMS müsste bei Bedarf im
+  Wix-Editor aktiviert werden.
+- **Design-Arbeit** (Stand 2026-06-12): Briefing und Inspirationen liegen vor
+  und sind analysiert:
+  - `briefing/onboarding-briefing.md` — strategisches Onboarding-Briefing
+    (Positionierung, Zielgruppe, Seitenstruktur, Tonalität, SEO, No-Gos).
+  - `design/inspirationen.md` — Analyse der Referenzen
+    thelightseeker.photography (WordPress/Divi) und amourfotografie.com
+    (selbst eine Wix-Site!) inkl. Svenjas Notizen.
+  - `design/designrichtung.md` — Designrichtung v2 „Quiet Editorial",
+    abgeglichen mit Svenjas Brandkit (SEJA-Wortmarke, Hände-Motiv,
+    Palette Rostrot/Greige/Dusty Rose auf hellem Grund, dunkle
+    About-Kontrast-Sektion): Farbpalette, Typografie (Brand-Serif bzw.
+    Prata-Fallback + Avenir/Raleway), fünf Signatur-Elemente (Foto-Fade,
+    Linien+Schrift im Bild, Foto-Trenner, Reveal-Scroll-Effekt, Weißraum)
+    und konkrete Wix-Editor-Anweisungen.
+  - `design/material.md` — Bestand des Google-Drive-Ordners „Seja Website"
+    (Fotos/Logos/Portraits; Snapshot 2026-06-12, Upload läuft noch).
+    Drive-Sync per `gdown --folder <Freigabe-Link>`.
+  - **Geklärt**: Logo-Subline für die Website ist „SEJA Fotografie"
+    (nicht „Media & Fotografie", nicht „& Coaching"). Brand-Fonts:
+    Headings = „Adore" (Elvina Studio), Akzent-Script = „The
+    Impressionist" Regular (PeachCreme).
+  - `design/entwurf-homepage-v1.jpg` — visueller Homepage-Entwurf
+    (generiert via `design/entwurf-homepage-v1.py`; echte Fotos, Palette
+    v2, Prata/Raleway, beide Logo-Varianten).
+  - **Launch-Ziel: möglichst bald** (Hagen, 2026-06-12). MVP-Checkliste
+    in `design/designrichtung.md` → „Launch-Plan". Testimonials gibt es
+    noch nicht → Sektion bauen, aber bis dahin ausblenden.
+  - **Offen**: Webfont-Lizenz + Dateien für „Adore" beschaffen —
+    **bis dahin ist Prata als Heading-Font gesetzt (Entscheidung Hagen
+    2026-06-12)**; Script-Einsatz nur als Signatur empfohlen; weiße
+    „SEJA Fotografie"-Logovariante: aus dem schwarzen seasalt-PNG
+    generiert (an Hagen geliefert), Vektor/höhere Auflösung wäre
+    langfristig besser; ist `Fotos/` Svenjas Website-Auswahl?;
+    Reportage-Material abwarten → dann Kuratierung (Hero, Foto-Trenner,
+    Reportage-Strecke); Testimonials nachreichen (Svenja).
 
 ## Repo
 
 - GitHub: `Tronje182/seja-fotografie`
-- Dieses Repo war bis zum 2026-06-12 leer; diese CLAUDE.md ist der erste Inhalt.
+- Hauptbranch: `main`. Achtung: GitHub hat als Default-Branch zunächst
+  `claude/happy-maxwell-0j22wz` gesetzt (erster Push in leeres Repo);
+  der Default muss einmalig in den GitHub-Settings auf `main` umgestellt
+  werden, falls noch nicht geschehen.
+- Arbeitsweise: Feature-Branches, PR gegen `main`.
