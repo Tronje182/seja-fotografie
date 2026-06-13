@@ -71,12 +71,28 @@ Einmal sauber machen, dann nie wieder anfassen.
 
 ### 1.1 Farbpalette hinterlegen
 
-1. Oben in der Leiste auf **Brand** → **Farben**.
-2. Optional „Palette ändern" für eine Basis; dann unter **Gespeicherte Farben**
-   per **Hinzufügen** die neun Farben aus der Tabelle oben als Hex anlegen.
-3. Off-White `#F4F1EE` als wichtigste Fläche merken — das ist die
-   Hintergrundfarbe für die meisten Sektionen und Voraussetzung für den
-   Foto-Fade (siehe 2.1).
+Oben in der Leiste auf **Brand** → **Farben**. Das Harmony-Panel ist in
+**Grundfarbe**, **Schattierungen** (per Schloss aus der Grundfarbe abgeleitet),
+**Akzent** und **Gespeicherte Farben** gegliedert. Die Template-Palette ist
+schon warm/erdig — am einfachsten **die vorhandenen Felder anklicken und auf
+unsere exakten Hex-Werte setzen** (nicht zwingend „Palette ändern"). Zuordnung:
+
+- **Grundfarbe** (die zwei Arbeitstiere, seitenweit):
+  - Hell → `#F4F1EE` (Off-White, Haupthintergrund)
+  - Dunkel → `#181719` (Fast-Schwarz, Text & dunkle Sektion)
+- **Schattierungen** (Schloss-Icon anklicken → manuell setzen):
+  - `#E9E2DD` (helles Greige) · `#B09993` (Greige, Linien) · `#755A51` (Taupe,
+    Reserve)
+- **Akzent**:
+  - `#732E1F` (Rostrot, CTA) · `#A38177` (Dusty Rose, Labels) · `#E9E2DD` ·
+    `#181719`
+- **Gespeicherte Farben** (per „+" hinzufügen — die reinen Textfarben):
+  - `#2E2B2B` (weicher Fließtext) · `#F2F2F2` (Text auf Dunkel/Bildern)
+
+Wichtig: Off-White + Fast-Schwarz gehören in die **Grundfarbe** (Harmony wendet
+sie seitenweit an), **Rostrot muss ein Akzent** sein (Buttons/Links greifen
+darauf zu). Off-White `#F4F1EE` ist zugleich Voraussetzung für den Foto-Fade
+(siehe 2.1).
 
 ### 1.2 Heller Grundlook für alle Sektionen
 
@@ -91,28 +107,41 @@ einzelnes „Seitenhintergrund"-Feld wie früher). Deshalb:
 
 ### 1.3 Schriften / Text-Styles
 
-Brand-Heading-Font ist „Adore", aber bis die Webfont-Lizenz geklärt ist gilt
-**Prata als Heading-Font** (Entscheidung Hagen). Fließtext: Raleway (oder
-Avenir Light).
+Brand-Heading-Font ist „Adore". Prata war als Wix-Fallback geplant, ist im
+**Harmony Editor aber nicht in der Schriftliste** (Stand 2026-06-13). Deshalb
+gilt als Heading-Font **Playfair Display** (Entscheidung 2026-06-13) — eine
+verfügbare Display-Serif mit hohem Strichkontrast, am nächsten an der
+Adore-Anmutung. Fließtext: **Instrument Sans** (Template-Default, saubere,
+gut lesbare Sans — passt) oder Raleway.
+
+> Das Template stellt aktuell **„Braggadocio"** als Heading ein — eine schwere
+> Art-Déco-Schrift, die **nicht** zum ruhigen Editorial-Look passt. Auf
+> Playfair Display umstellen.
 
 1. Oben auf **Brand** → **Text**.
-2. **Font für Überschriften** = Prata, **Font für Absätze** = Raleway wählen
-   (oder ein passendes Text-Set, dann einzeln anpassen).
-3. Einzelne Styles feinjustieren (Größe/Farbe/Zeilenhöhe). Startwerte:
-   - **H1**: Prata, ~48–64px Desktop, `#181719`.
-   - **H2**: Prata, ~32–40px, `#181719`.
-   - **H3**: Prata, ~24–28px.
-   - **Absatz**: Raleway, 16–18px, Zeilenhöhe 1.6–1.8, `#2E2B2B`,
+2. **Font für Überschriften** = Playfair Display (im Schrift-Menü oben ins
+   **Suchfeld** „Playfair" tippen), **Font für Absätze** = Instrument Sans
+   (oder Raleway).
+3. Einzelne Styles feinjustieren. **Textfarbe** wird in Harmony nicht zentral
+   als ein Feld gesetzt, sondern pro Stil bzw. pro Element (siehe unten).
+   Startwerte:
+   - **H1**: Playfair Display, ~48–64px Desktop, Farbe `#181719`.
+   - **H2**: Playfair Display, ~32–40px, `#181719`.
+   - **H3**: Playfair Display, ~24–28px.
+   - **Absatz**: Instrument Sans, 16–18px, Zeilenhöhe 1.6–1.8, Farbe `#2E2B2B`,
      Zeilenbreite max. ~650px.
-   - **Eyebrow-Label**: Raleway in VERSALIEN, 13–14px, Laufweite +0.15em,
-     Farbe Dusty Rose `#A38177` (als eigener angepasster Stil speichern: Element
-     gestalten → in der Action-Bar **Custom → Speichern** → Stil ersetzen).
-4. **Eigene Fonts (Adore)**: Ob der Harmony Editor das Hochladen eigener
-   Webfonts schon unterstützt, ist offen (in der aktuellen Brand-Doku nicht
-   bestätigt). **Bis das geklärt und die Lizenz vorhanden ist, bleibt Prata** —
-   das ist die bewusste Launch-Entscheidung, kein Provisorium-Zwang. Lizenz-
-   Hinweis: Desktop-Lizenz deckt **keine** Webfont-Einbettung; dafür braucht es
-   eine Web-/Webfont-Lizenz.
+   - **Eyebrow-Label**: Sans in VERSALIEN, 13–14px, Laufweite +0.15em, Farbe
+     Dusty Rose `#A38177` (als eigenen Stil speichern: Element gestalten → in
+     der Action-Bar **Custom → Speichern** → Stil ersetzen).
+4. **Textfarbe setzen** (es gibt kein globales „Textfarbe"-Feld im Branding):
+   - **Global pro Stil**: Brand → Text → Stil (z. B. Absatz/Überschrift)
+     bearbeiten → dort in der Formatierung die **Farbe** aus der Palette wählen.
+   - **Pro Element**: Text markieren → Action-Bar → **„Alle Textoptionen"** →
+     **Textfarbe** aus der Palette (z. B. `#F2F2F2` auf dunklen Sektionen).
+5. **Eigene Fonts (Adore)**: Ob Harmony Webfont-Upload schon unterstützt, ist
+   offen (in der Brand-Doku nicht bestätigt). **Bis das geklärt und die Lizenz
+   vorhanden ist, bleibt Playfair Display.** Lizenz-Hinweis: Desktop-Lizenz
+   deckt **keine** Webfont-Einbettung; dafür braucht es eine Web-/Webfont-Lizenz.
 
 ### 1.4 Header (Navigation)
 
@@ -121,8 +150,8 @@ Avenir Light).
    **Achtung Variante**: die abgestimmte Subline ist **„SEJA Fotografie"** —
    nicht „Media & Fotografie" (siehe Abgleich am Ende).
 3. **Menü** auf die abgestimmte Navigation umstellen: **Hochzeiten ·
-   Portraits & Paare · Portfolio · Über Svenja · Kontakt**. Schrift Raleway,
-   `#181719`, Hover `#732E1F`.
+   Portraits & Paare · Portfolio · Über Svenja · Kontakt**. Schrift Instrument
+   Sans, `#181719`, Hover `#732E1F`.
 4. **CTA-Button**: **Ghost-/Textbutton** in Rostrot `#732E1F` (nicht flächig
    gefüllt). Text **„Anfrage senden"** — *nicht* „Jetzt buchen" (zum Start kein
    direkter Kalender/Buchung; siehe Briefing). Verlinkt zur Kontaktseite/zum
@@ -350,7 +379,7 @@ Harmony ist responsiv und passt vieles automatisch an — trotzdem oben in den
 ## Nach dem Launch (nicht blockierend)
 
 - **Testimonials** einblenden, sobald 2–3 Zitate da sind.
-- **Adore-Webfont** (sobald Lizenz/Upload möglich) → ersetzt Prata.
+- **Adore-Webfont** (sobald Lizenz/Upload möglich) → ersetzt Playfair Display.
 - **Englische Version** via **Wix Multilingual**.
 - **Eigene Domain** + Weiterleitung.
 - **Regionale SEO-Landingpages**.
@@ -380,7 +409,8 @@ Grundlayout mit großem Foto — das passt zur Richtung.
 
 - [ ] Brand → Farben (9 Farben) hinterlegt
 - [ ] Inhaltssektionen-Hintergrund exakt `#F4F1EE`
-- [ ] Brand → Text: Prata-Headings + Raleway-Fließtext + Eyebrow-Stil
+- [ ] Brand → Text: Playfair-Display-Headings (nicht Braggadocio) +
+      Instrument-Sans-Fließtext + Eyebrow-Stil
 - [ ] Header: richtiges Logo („SEJA Fotografie"), abgestimmtes Menü, Ghost-CTA
       „Anfrage senden"
 - [ ] Footer: weißes Logo, Instagram, Impressum/Datenschutz
