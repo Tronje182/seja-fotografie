@@ -1,0 +1,6 @@
+# Scratch-/Vorschau-Artefakte (mit _ präfigiert), nicht versionieren
+design/assets/_*
+
+# Python
+__pycache__/
+*.pyc

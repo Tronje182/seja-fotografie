@@ -111,34 +111,41 @@ Brand-Heading-Font ist „Adore". Prata war als Wix-Fallback geplant, ist im
 **Harmony Editor aber nicht in der Schriftliste** (Stand 2026-06-13). Deshalb
 gilt als Heading-Font **Playfair Display** (Entscheidung 2026-06-13) — eine
 verfügbare Display-Serif mit hohem Strichkontrast, am nächsten an der
-Adore-Anmutung. Fließtext: **Instrument Sans** (Template-Default, saubere,
-gut lesbare Sans — passt) oder Raleway.
+Adore-Anmutung. **Fließtext: Avenir Light** (so im Editor gesetzt, 2026-06-13 —
+die erste Wahl aus der Designrichtung).
 
 > Das Template stellt aktuell **„Braggadocio"** als Heading ein — eine schwere
 > Art-Déco-Schrift, die **nicht** zum ruhigen Editorial-Look passt. Auf
 > Playfair Display umstellen.
 
-1. Oben auf **Brand** → **Text**.
+1. Oben auf **Brand** → **Text**. Schriftartenset: **Playfair Display /
+   Avenir Light**.
 2. **Font für Überschriften** = Playfair Display (im Schrift-Menü oben ins
-   **Suchfeld** „Playfair" tippen), **Font für Absätze** = Instrument Sans
-   (oder Raleway).
-3. Einzelne Styles feinjustieren. **Textfarbe** wird in Harmony nicht zentral
-   als ein Feld gesetzt, sondern pro Stil bzw. pro Element (siehe unten).
-   Startwerte:
-   - **H1**: Playfair Display, ~48–64px Desktop, Farbe `#181719`.
-   - **H2**: Playfair Display, ~32–40px, `#181719`.
-   - **H3**: Playfair Display, ~24–28px.
-   - **Absatz**: Instrument Sans, 16–18px, Zeilenhöhe 1.6–1.8, Farbe `#2E2B2B`,
-     Zeilenbreite max. ~650px.
-   - **Eyebrow-Label**: Sans in VERSALIEN, 13–14px, Laufweite +0.15em, Farbe
-     Dusty Rose `#A38177` (als eigenen Stil speichern: Element gestalten → in
-     der Action-Bar **Custom → Speichern** → Stil ersetzen).
-4. **Textfarbe setzen** (es gibt kein globales „Textfarbe"-Feld im Branding):
+   **Suchfeld** „Playfair" tippen), **Font für Absätze** = Avenir Light.
+3. Finale Typo-Skala (im Editor gesetzt), **Textfarbe** pro Stil bzw. pro
+   Element (siehe unten), nicht zentral als ein Feld:
+   - **Überschrift 1 (H1)**: Playfair Display, 64px, Farbe `#181719`.
+   - **Überschrift 2 (H2)**: Playfair Display, 40px, `#181719`.
+   - **Überschrift 3 (H3)**: Playfair Display, 28px (H4 ggf. auf ~24px für eine
+     feinere Abstufung).
+   - **Überschrift 5/6**: 22px / 18px.
+   - **Textabschnitt 1/2**: Avenir Light, 18px / 16px, Farbe `#2E2B2B`,
+     **Zeilenhöhe 1.6–1.8**, Zeilenbreite im Layout max. ~650px.
+   - **Textabschnitt 3 (14px)**: als **Eyebrow-Label** nutzen — GROSSBUCHSTABEN,
+     Laufweite ~+0.15em, Farbe Dusty Rose `#A38177`.
+4. **Feinschliff**:
+   - Große Playfair-Headlines (64px) mit **engerer Zeilenhöhe ~1.05–1.15** und
+     einem Hauch negativer Laufweite, damit mehrzeilige Headlines nicht
+     ausfransen.
+   - **Avenir Light** ist eine dünne Schnittstärke: im **Mobil-View** auf
+     Lesbarkeit prüfen; wirkt der Haupt-Fließtext zu fein/blass, auf
+     **Avenir (Book/Regular)** gehen und Light nur für große/ruhige Stellen.
+5. **Textfarbe setzen** (es gibt kein globales „Textfarbe"-Feld im Branding):
    - **Global pro Stil**: Brand → Text → Stil (z. B. Absatz/Überschrift)
      bearbeiten → dort in der Formatierung die **Farbe** aus der Palette wählen.
    - **Pro Element**: Text markieren → Action-Bar → **„Alle Textoptionen"** →
      **Textfarbe** aus der Palette (z. B. `#F2F2F2` auf dunklen Sektionen).
-5. **Eigene Fonts (Adore)**: Ob Harmony Webfont-Upload schon unterstützt, ist
+6. **Eigene Fonts (Adore)**: Ob Harmony Webfont-Upload schon unterstützt, ist
    offen (in der Brand-Doku nicht bestätigt). **Bis das geklärt und die Lizenz
    vorhanden ist, bleibt Playfair Display.** Lizenz-Hinweis: Desktop-Lizenz
    deckt **keine** Webfont-Einbettung; dafür braucht es eine Web-/Webfont-Lizenz.
@@ -150,8 +157,8 @@ gut lesbare Sans — passt) oder Raleway.
    **Achtung Variante**: die abgestimmte Subline ist **„SEJA Fotografie"** —
    nicht „Media & Fotografie" (siehe Abgleich am Ende).
 3. **Menü** auf die abgestimmte Navigation umstellen: **Hochzeiten ·
-   Portraits & Paare · Portfolio · Über Svenja · Kontakt**. Schrift Instrument
-   Sans, `#181719`, Hover `#732E1F`.
+   Portraits & Paare · Portfolio · Über Svenja · Kontakt**. Schrift Avenir
+   Light, `#181719`, Hover `#732E1F`.
 4. **CTA-Button**: **Ghost-/Textbutton** in Rostrot `#732E1F` (nicht flächig
    gefüllt). Text **„Anfrage senden"** — *nicht* „Jetzt buchen" (zum Start kein
    direkter Kalender/Buchung; siehe Briefing). Verlinkt zur Kontaktseite/zum
@@ -207,17 +214,20 @@ Sektion: 1 Eyebrow, 1 Headline, max. 1 kurzer Absatz, max. 1 CTA.
      eine sehr dezente halbtransparente Box, **kein** flächiges Overlay.
 4. **Foto-Fade unten** (Signatur-Element 1) — Harmony-spezifisch:
    Der Sektion-Hintergrund selbst kennt **keinen Verlauf**. Daher als
-   **Overlay-Element** lösen:
-   - **Robuster Weg (editor-sicher): PNG-Verlauf.** Eine breite PNG-Grafik, die
-     von oben transparent nach unten `#F4F1EE` (100 %) verläuft, über **+ Add →
-     Bild** einfügen und bündig an die Unterkante der Hero-Sektion legen (volle
-     Breite). Die nächste Sektion hat exakt `#F4F1EE` → das Foto „löst sich
-     auf". Diese Verlaufs-PNG kann ich auf Wunsch passend generieren und in den
-     Media Manager legen.
-   - **Falls verfügbar:** eine Box/Form mit **Verlaufsfüllung** (transparent →
-     `#F4F1EE`) über die unteren ~25–40 % legen. Ob Harmony für Form-/Box-
-     Elemente Verlaufsfüllungen bietet, vor dem Bau kurz prüfen; sonst PNG.
-   - Sparsam: 1–2 Fades pro Seite.
+   **Overlay-Element** über eine fertige Verlaufs-PNG lösen:
+   - **Asset**: `design/assets/foto-fade-offwhite.png` (transparent oben →
+     `#F4F1EE` deckend unten, 1920×1000, weiche Smoothstep-Blende). Für dunkle
+     Sektionen: `design/assets/foto-fade-dunkel.png` (→ `#181719`). Neu
+     erzeugen / Farbe ändern: `python3 design/foto-fade.py`.
+   - **Einbauen**: PNG in den Media Manager hochladen → in der Hero-Sektion über
+     **+ Add → Bild** einfügen → **auf volle Breite** ziehen und **bündig an die
+     Unterkante** legen (Höhe nach Geschmack, ~25–40 % der Sektion). Die nächste
+     Sektion hat exakt `#F4F1EE` → das Foto „löst sich auf".
+   - Wichtig: Die Folgesektion muss **exakt** dieselbe Farbe haben wie das
+     deckende PNG-Ende, sonst entsteht eine Kante.
+   - Sparsam: 1–2 Fades pro Seite. (Falls Harmony für Box-/Form-Elemente eine
+     Verlaufsfüllung bietet, geht es alternativ auch damit — die PNG ist aber
+     der editor-sichere Weg und mobil unkritisch.)
 
 ### 2.2 Intro / Haltung
 
@@ -410,7 +420,7 @@ Grundlayout mit großem Foto — das passt zur Richtung.
 - [ ] Brand → Farben (9 Farben) hinterlegt
 - [ ] Inhaltssektionen-Hintergrund exakt `#F4F1EE`
 - [ ] Brand → Text: Playfair-Display-Headings (nicht Braggadocio) +
-      Instrument-Sans-Fließtext + Eyebrow-Stil
+      Avenir-Light-Fließtext + Eyebrow-Stil (Textabschnitt 3)
 - [ ] Header: richtiges Logo („SEJA Fotografie"), abgestimmtes Menü, Ghost-CTA
       „Anfrage senden"
 - [ ] Footer: weißes Logo, Instagram, Impressum/Datenschutz
